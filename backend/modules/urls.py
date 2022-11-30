@@ -6,7 +6,6 @@ from django.db.utils import ProgrammingError
 
 urlpatterns = []
 
-
 # BE CAREFUL! Do not remove or change this code snippet, this is needed to get
 # Crowdbotics' official modules working properly.
 
