@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  dallas:
+  web:
     depends_on:
       - postgres
       - redis
