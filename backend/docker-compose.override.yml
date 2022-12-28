@@ -1,7 +1,7 @@
-version: "3.9"
+version: "3"
 
 services:
-  web:
+  dallas:
     build:
       context: .
       args:
@@ -14,8 +14,9 @@ services:
   postgres:
     environment:
       POSTGRES_PASSWORD: <postgres_pwd>
+      PGDATA: /var/lib/postgresql/data/dallas
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data/dallas
     ports:
       - "5432:5432"
   redis:
